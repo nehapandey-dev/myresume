@@ -6,88 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body style="border: 2px solid black;margin-left:240px; margin-right: 240px;">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body style="line-height: 20px; width: 800px; border: 2px solid black;margin: auto;">
     <div
-        style=" position: relative; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-        <div style="background-color: #b6d2f5;display: flex;justify-content: space-between;gap:50px">
+        style="width: 800px; position: relative; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <div style="background-color: #053b6e;display: flex;justify-content: space-between;gap:50px">
             <div class="img">
-                <img style="margin:10px; border-radius:50%;"
-                    src="./Screen Shot 2022-12-12 at 11.40.15 PM.png" width="200" height="200">
+                <img style="margin:10px; border-radius:50%;" src="./profile.png" width="150" height="150">
             </div>
             <div class="intro" style="padding:10px">
-                <h2>Neha Pandey</h2>
-                <h4 style="font-family: sans-serif;">FRONTEND DEVELOPER</h4>
-                <P style="color:rgb(60, 60, 245)">I am a frontend developer. I love to code in Javascript and recently build 15+ static website of HTML
-                    ,
-                    CSS and Tailwind , 25 +projects of Javascript and some projects of React. Also worked on Node.js,
-                    created API's and authentication along with mongoDB.</P>
+                <div style="color:white;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    <h3>Neha Pandey</h3>
+                    <h5 style="font-family: sans-serif;">FRONTEND WEB DEVELOPER</h5>
+                </div>
+                <P style="color:rgb(244, 145, 79);font-size: 15px;margin-top: 10px;">A Front-End Developer with
+                    entry-level experience specializing in web development, user interface design, HTML , Javascript and
+                    React . Adept at identifying opportunities to enhance front-end design and improve the user
+                    experience.</P>
             </div>
         </div>
-        <div style="border:2px solid black ;"></div>
-        <div class="info" style="margin-left:20px; display:flex;justify-content:space-around;gap:100px;">
+
+        <div class="info" style=" margin-left:20px;display:flex;justify-content: space-around;">
             <div>
-                <div class="contact">
-                    <h4 style="font-family: sans-serif; background-color: #bdd6f4; width: 150px;padding-left:20px;">CONTACT INFO</h4>
+                <div style="font-size:14px ;">
+                    <br class="contact" style="margin-bottom: 30px;">
+                    <h4 style=" margin-bottom: 10px;font-family: sans-serif;text-decoration: underline; width: 150px;">
+                        CONTACT INFO</h4>
                     <img src="data:image/png;base64,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"
-                        width="20px"><span>+9643634963</span><br>
-                    <img src="https://www.freepnglogos.com/uploads/gmail-email-logo-png-16.png"
-                        width="20px"><span>pneha0389@gmail.com</span><br>
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" width="20px">
+                        width="14px"><span>+9643634963</span></br>
+                    <span>✉️ pneha0389@gmail.com</span><br>
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" width="14px"
+                        style="color:blue">
                     <a href="https://github.com/nehapandey-dev" target="_blank">Github</a><br>
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20px" alt="">
-                    <a href="linkedin.com/in/neha-pandey-a89a5a224" target="_blank">Linkdin</a>
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="14px" alt="">
+                    <a href="https://www.linkedin.com/in/neha-pandey-a89a5a224/" target="_blank">Linkdin</a>
 
                 </div>
                 <div class="education">
-                    <H4 style="font-family: sans-serif;background-color: #bdd6f4; width: 150px;padding-left:20px;">EDUCATION</H4>
+                    <h4
+                        style=" margin-bottom:10px;margin-top: 30px; font-family: sans-serif;text-decoration: underline; width: 150px;">
+                        EDUCATION</h4>
                 </div>
-                <p>BCOM 2015-2018<br>Vinayaka Mission Sikkim University</p>
-                <p>Full Stack Javascript Web Developer Bootcamp (Present)</p>
-                <div class="skills">
-                    <H4 style="font-family: sans-serif;background-color: #bdd6f4; width: 150px;padding-left:20px;">SKILLS</H4>
-                    <div style="font-family: sans-serif;display: flex;justify-content: space-between;color:rgb(74, 74, 240)">
-                        <div>
-                            <h5>CSS</h5>
-                            <h5>HTML</h5>
-                            <h5>JavaScript</h5>
-                            <h5>Tailwind Css</h5>
+                <div style="font-size:15px;width: 180px;">
+                    <p>Diploma Course in Mechanical Engineering(Automobile) 2011-2014,</p>
+                    <p> GOVT.Polytechnic , Gorakhpur</p><br>
+
+                    <p>BCOM 2015-2018,<br>Vinayaka Mission Sikkim University</p><br>
+
+                    <p>Full Stack Javascript Web Developer Bootcamp from INeuron</p>
+                    <p>( July-2022 - Jan-2023 ) </p>
+
+                </div>
+                <div>
+                    <div class="intern">
+                        <h4 style="margin-top: 12px; font-family: sans-serif;text-decoration: underline;">INTERNSHIP
+                        </h4>
+                    </div>
+                    <p style="width:200px;margin-top:8px;font-size:15px ">Internship Certificate in E-Commerce
+                        Application Clone at
+                        INEURON INTELLIGENCE PRIVATE LIMITED</p>
+                    <p>( Jan-2023 - March-2023 )</p>
+                </div>
+
+            </div>
+
+            <div style="margin-top:15px;width: 500px;">
+                <div class="skills" style="margin-left:5px;font-size: 14px;">
+                    <h4 style="margin-bottom:10px; font-family: sans-serif; text-decoration: underline; width: 150px;">
+                        TECHNICAL SKILLS</h4>
+                    <div style="font-size:14px; font-family: sans-serif;margin-left: 12px;">
+                        <div style="font-size:14px">
+                            <h4>Web Languages:</h4>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <h4>Frameworks:</h4>
+                            <li>Tailwind Css</li>
+                            <li>Bootstrap</li>
+                            <li>React.Js</li>
                         </div>
-                        <div>
-                            <h5>React.Js</h5>
-                            <h5>Node.Js</h5>
-                            <h5>MongoDB</h5>
-                        </div> 
                     </div>
                 </div>
-
-            </div>
-            <div class="projects">
-                <h4 style="font-family: sans-serif;background-color: #bdd6f4; width: 150px;padding-left:20px;">PROJECTS</h4>
+                <h4 style="margin-top: 20px; margin-bottom: 10px; font-family: sans-serif;text-decoration: underline;">
+                    PROJECTS
+                </h4>
                 <a href="https://www.findcoder.io/u/nehap" target="_blank">My Portfolio Links</a>
                 <div>
-                    <h5 style="font-family: sans-serif;color:rgb(74, 74, 240)">Shoiyfy ,Paytm and Rode clone</h5>
+                    <p style="margin-top: 10px;color:rgb(74, 74, 240)">HTML ,CSS and Tailwind
+                        Css Projects :</p>
 
-                    <p>Builded responsive clones of above using HTML and Tailwind Css</p>
+                    <p style="font-size:15px">Shoiyfy ,Paytm and Rode clone.Built responsive clones by using HTML and
+                        Tailwind Css</p>
 
 
-                    <h5 style="font-family: sans-serif;color:rgb(74, 74, 240)">JavaScript Projects</h5>
-                    <p>Learned and practise JavaScript concepts by building practical projects like Accordion, Jokes
+                    <p style="font-family: sans-serif;color:rgb(74, 74, 240);margin-top: 10px;">
+                        JavaScript Projects :</p>
+                    <p style="font-size:15px">Learnt and practiced JavaScript concepts by building practical projects
+                        like Accordion, Jokes
                         Generator App, Color Game App, Calculator App and stop watch etc.</p>
-                    <h5 style="font-family: sans-serif;color:rgb(74, 74, 240)">ReactJs</h5>
-                    <p>Build google keeper clone App by using react hooks and state manegment concepts </p>
+                    <p style="font-family: sans-serif;color:rgb(74, 74, 240);margin-top: 10px;margin-bottom: 10px;">
+                        ReactJs Projects :</p>
+                    <p style="font-size:15px"><b>1.</b> Bigbasket Clone web app built ,where users can
+                        shop ,can explore
+                        and shop for
+                        different products from comfort of thier homes. The web contains modern UI with many extra
+                        features. The application contains Dynamic Content Management System .
+                        <a href="https://bigbasket-react.netlify.app" target="_blank">Project Link</a>
+                    </p>
+
+                    <p style="font-size:15px ;margin-top: 12px; margin-bottom: 10px;">
+                        <b>2.</b> Developed a food delivery application where
+                        users can explore the differnt food items.
+                        <a href="https://hungerfoodapp.netlify.app" target="_blank">Project Link</a>
+                    </p>
+
+                    <p style="font-size:15px ;margin-top: 12px; margin-bottom: 10px;">
+                        <b>3.</b> Developed a Todo application ,where user can create tasks and Each task can be moved
+                        and updated.
+                        <a href="https://nehatodo.netlify.app/" target="_blank">Project Link</a>
+                    </p>
 
                 </div>
 
-                <div class="hobby">
-                    <h4 style="font-family: sans-serif;background-color: #bdd6f4; width: 150px;padding-left:20px;">INTEREST</h4>
-                    <li>Playing Guitar</li>
-                    <li>Yoga</li>
-                    <li>Painting</li>
-                </div>
+
             </div>
         </div>
+    </div>
 </body>
 
 </html>
